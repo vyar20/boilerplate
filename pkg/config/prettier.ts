@@ -1,5 +1,5 @@
 import path from 'path'
-import { Config } from 'prettier'
+import { type Config } from 'prettier'
 
 export default {
   printWidth: 80,
@@ -14,4 +14,4 @@ export default {
       'node_modules/prettier-plugin-tailwindcss/dist/index.mjs'
     )
   ]
-} satisfies Config
+} as Config

@@ -5,9 +5,9 @@
     "type": "module",
     "exports": {
         "./tsconfig": "./tsconfig.json",
-        "./eslint": "./eslint.json",
-        "./eslint-client": "./eslint-client.json",
-        "./prettier": "./prettier.json"
+        "./eslint": "./eslint.ts",
+        "./eslint-client": "./eslint-client.ts",
+        "./prettier": "./prettier.ts"
     },
     "dependencies": {},
     "devDependencies": {
