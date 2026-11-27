@@ -8,6 +8,7 @@
         "./*": "./src/*.ts"
     },
     "dependencies": {
+        "@repo/auth": "workspace:*",
         "@repo/db": "workspace:*",
         "@repo/env": "workspace:*",
         "@repo/utils": "workspace:*"
