@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/config/tsconfig",
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}

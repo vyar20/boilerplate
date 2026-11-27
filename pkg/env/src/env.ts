@@ -21,13 +21,12 @@ type EnvSchema = z.infer<typeof envSchema>
 
 export const env = (() => {
   const parsed = envSchema.safeParse(Bun.env)
-
   if (isBrowser) throw new Error('Env only available on server side.')
 
   if (!parsed.success) {
     console.error('Invalid environtment variable.')
     console.error(parsed.error.issues)
-    process.exit(1)
+    throw process.exit(1)
   }
 
   return parsed.data

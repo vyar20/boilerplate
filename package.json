@@ -6,7 +6,10 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types",
+    "typecheck": "turbo run typecheck",
+    "db:push": "turbo run db:push",
+    "db:gen": "turbo run db:gen",
+    "db:migrate": "turbo run db:migrate",
     "del": "find . -type d \\( -name node_modules -o -name dist \\) -exec rm -rf {} +"
   },
   "dependencies": {
