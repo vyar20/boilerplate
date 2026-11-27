@@ -13,6 +13,7 @@
     "del": "find . -type d \\( -name node_modules -o -name dist \\) -exec rm -rf {} +"
   },
   "dependencies": {
+    "date-fns": "^4.4.0",
     "hono": "^4.13.22",
     "zod": "^4.6.7"
   },

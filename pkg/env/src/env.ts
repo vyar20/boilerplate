@@ -1,5 +1,6 @@
 import { isBrowser } from '@repo/utils/client-utils'
 import { z } from 'zod'
+
 declare module 'bun' {
   // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   interface Env extends EnvSchema {}
