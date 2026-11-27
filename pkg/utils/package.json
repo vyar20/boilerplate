@@ -1,10 +1,10 @@
 {
-    "name": "@repo/env",
+    "name": "@repo/utils",
     "version": "1.0.0",
     "private": true,
     "type": "module",
     "exports": {
-        ".": "./src/env.ts"
+        "./*": "./src/*.ts"
     },
     "dependencies": {},
     "devDependencies": {

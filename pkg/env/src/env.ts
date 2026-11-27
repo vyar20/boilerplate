@@ -1,5 +1,5 @@
+import { isBrowser } from '@repo/utils/client-utils'
 import { z } from 'zod'
-
 declare module 'bun' {
   // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   interface Env extends EnvSchema {}
@@ -21,6 +21,8 @@ type EnvSchema = z.infer<typeof envSchema>
 
 export const env = (() => {
   const parsed = envSchema.safeParse(Bun.env)
+
+  if (isBrowser) throw new Error('Env only available on server side.')
 
   if (!parsed.success) {
     console.error('Invalid environtment variable.')

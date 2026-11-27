@@ -41,6 +41,21 @@ Feel free to clone or fork this repo.
 |   |   |-  📄 prettier.ts                          # Shared prettier config
 |   |   |-  📄 tsconfig.json                        # Shared tsconfig
 |   |   |-  📄 package.json
+|   |-  📁 env/                                     # env guard
+|   |   |-  📁 src/
+|   |   |   |-  📄 env.ts                           # env schema (can used only on server)
+|   |   |-  📄 eslint.config.ts                     # eslint config
+|   |   |-  📄 .prettierrc.ts                       # prettier config
+|   |   |-  📄 tsconfig.json                        # tsconfig
+|   |   |-  📄 package.json
+|   |-  📁 utils/                                   # Client and Server Utility
+|   |   |-  📁 src/
+|   |   |   |-  📄 client-utils.ts                  # Client utils (can be used on both client and server side)
+|   |   |   |-  📄 server-utils.ts                  # Server utils (can be used only on server side)
+|   |   |-  📄 eslint.config.ts                     # eslint config
+|   |   |-  📄 .prettierrc.ts                       # prettier config
+|   |   |-  📄 tsconfig.json                        # tsconfig
+|   |   |-  📄 package.json
 |-  📄 .env.example                                 # Example of .env
 |-  📄 .gitignore
 |-  📄 bun.lock

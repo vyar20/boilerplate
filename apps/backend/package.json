@@ -1,0 +1,16 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "NODE_ENV=development bun --hot --env-file=../../.env src/app.ts"
+    },
+    "dependencies": {
+        "@repo/env": "workspace:*",
+        "@repo/utils": "workspace:*"
+    },
+    "devDependencies": {
+        "@repo/config": "workspace:*"
+    }
+}
